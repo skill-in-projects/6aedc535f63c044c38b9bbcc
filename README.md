@@ -1,9 +1,16 @@
 # Solo app - Frontend
 
-## GitHub Pages
+## Frontend Deployment
 
-**URL:** https://skill-in-projects.github.io/6aedc535f63c044c38b9bbcc/
+**GitHub Pages URL:** https://skill-in-projects.github.io/6aedc535f63c044c38b9bbcc/
 
-## Stack
+## Backend API
 
-React + Vite. Run `npm install` then `npm run dev` or `npm start`. Use `npm run lint` and `npm run format` for ESLint and Prettier.
+**API URL:** https://webapi6aedc535f63c044c38b9bbcc-production.up.railway.app
+
+## Project Structure
+
+- `index.html` - Main landing page
+- `config.js` - API configuration
+- `style.css` - Styling
+
