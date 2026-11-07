@@ -1,18 +1,18 @@
-// The starting screen of a new app. Replace it with the app's real home page.
+import { HashRouter, Link, Route, Routes } from 'react-router-dom'
+import HomePage from './pages/HomePage.jsx'
+import NotesPage from './pages/NotesPage.jsx'
+
 export default function App() {
   return (
-    <main
-      style={{
-        minHeight: '100vh',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        fontFamily: 'system-ui, sans-serif',
-        color: '#6b7280',
-        background: '#ffffff',
-      }}
-    >
-      <p>Your app will appear here.</p>
-    </main>
+    <HashRouter>
+      <nav style={{ display: 'flex', gap: 16, padding: 16, fontFamily: 'system-ui, sans-serif' }}>
+        <Link to="/">Home</Link>
+        <Link to="/notes">Notes</Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/notes" element={<NotesPage />} />
+      </Routes>
+    </HashRouter>
   )
 }

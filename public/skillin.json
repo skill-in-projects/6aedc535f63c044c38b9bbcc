@@ -1,0 +1,8 @@
+{
+  "name": "My App",
+  "brief": "A simple personal app for jotting down notes. Its main screens are a Home page and a Notes page where the user types a note and adds it to a list.",
+  "pages": [
+    {"name": "Home", "path": "/"},
+    {"name": "Notes", "path": "/#/notes"}
+  ]
+}
